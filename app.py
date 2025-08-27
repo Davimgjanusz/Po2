@@ -14,5 +14,9 @@ def passagens():
 def sobre():
     return render_template('sobre.html')
 
+@app.route('/suporte')
+def suporte():
+    return render_template('suporte.html')
+
 if __name__ == '__main__':
     app.run(debug = True)
