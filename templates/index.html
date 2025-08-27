@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviação</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/index.css')}}">
+</head>
+<body>
+    <header>
+        <div id="logo">Viagens<span>Cap</span></div>
+        <div id="menu">
+                <a href="/">Home</a>
+                <a href="">Passagens</a>
+                <a href="">Sobre</a>
+                <a href="">Suporte</a>
+        </div>
+    </header>
+
+    <div id="principal">
+        <h2>Venha fazer a melhor viagem da tua vida conosco!</h2>
+        
+        <div id="area-de-viagem">
+            <div class="card" style="width: 18rem;">
+                <img src="{{url_for('static', filename = 'imagens/RioDeJaneiro.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rio de Janeiro</h5>
+                  <p class="card-text">Viage conosco rumo ao Rio de Janeiro!</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+    
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', filename = 'imagens/gramado-rs.webp')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rio Grande do Sul</h5>
+                      <p class="card-text">Explore a beleza e o frio de Gramdo!</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+    
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{url_for('static', filename = 'imagens/resort-rio-quente.webp')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Goiás</h5>
+                          <p class="card-text">Visite Goiás, a terra do sertanejo e cheia de diversão!</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
